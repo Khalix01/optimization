@@ -1,0 +1,11 @@
+digraph "callgraph" {
+  F55dd198f5640 [label="vanilla_rescaleImage(unsigned ...\n4 640 921 362"];
+  F55dd198f6000 [label="getPixel(unsigned char*, int, ...\n1 857 945 600"];
+  F55dd198f65c0 [label="setPixel(unsigned char*, int, ...\n481 075 200"];
+  F55dd198f72e0 [label="main\n4 640 921 362"];
+  F55dd198f9d30 [label="(below main)\n4 640 921 362"];
+  F55dd198f5640 -> F55dd198f6000 [weight=3,label="1 857 945 600 (33 177 600x)"];
+  F55dd198f5640 -> F55dd198f65c0 [weight=2,label="481 075 200 (8 294 400x)"];
+  F55dd198f72e0 -> F55dd198f5640 [weight=3,label="4 640 921 362 (4x)"];
+  F55dd198f9d30 -> F55dd198f72e0 [weight=3,label="4 640 921 362 (0x)"];
+}
